@@ -16,6 +16,7 @@ gem "wice_grid", '3.6.0.pre4'
 gem 'font-awesome-sass',  '~> 4.3'
 gem 'bootstrap-sass'
 gem 'sprockets'
+gem 'simple_form'
 
 group :development, :test do
   gem 'byebug'
