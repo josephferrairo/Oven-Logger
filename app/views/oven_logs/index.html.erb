@@ -1,1 +1,65 @@
-<h1>Hi!</h1>
+<br />
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+  <%= grid(@oven_logs_grid) do |g|
+
+    g.column name: 'Customer' do |oven_log|
+      oven_log.customer
+    end
+
+    g.column name: 'Work Order' do |oven_log|
+      oven_log.work_order
+    end
+
+    g.column name: 'Purchase Order' do |oven_log|
+      oven_log.purchase_order
+    end
+
+    g.column name: 'Stress in(Date)' do |oven_log|
+      oven_log.stress_in_date
+    end
+
+    g.column name: 'Stress in(Time)' do |oven_log|
+      oven_log.stress_in_time
+    end
+
+    g.column name: 'Stress out(Date)' do |oven_log|
+      oven_log.stress_out_date
+    end
+
+    g.column name: 'Stress out(Time)' do |oven_log|
+      oven_log.stress_out_time
+    end
+
+    g.column name: 'Asset Number' do |oven_log|
+      oven_log.stress_asset
+    end
+
+    g.column name: 'HER in(Date)' do |oven_log|
+      oven_log.her_in_date
+    end
+
+    g.column name: 'HER in(Time)' do |oven_log|
+      oven_log.her_in_time
+    end
+
+    g.column name: 'HER out(Date)' do |oven_log|
+      oven_log.her_out_date
+    end
+
+    g.column name: 'HER out(Time)' do |oven_log|
+      oven_log.her_out_time
+    end
+
+    g.column name: 'Asset Number' do |oven_log|
+      oven_log.her_asset
+    end
+
+    g.column name: 'Operator' do |oven_log|
+      oven_log.operator
+    end
+  end %>
+</div>
+  <% @oven_log.each do |oven_log| %>
+  <%= oven_log.customer %>
+  <%= oven_log.stress_in_time %>
+  <% end %>
