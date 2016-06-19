@@ -1,24 +1,30 @@
 <br  />
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-  <h1>Add a New Customer</h1>
+  <h1>Add a New Oven Log Entry</h1>
   <br  />
   <%= simple_form_for @oven_log, url: oven_logs_path do |f| %>
-  <%= f.input :customer%>
-  <%= f.input :work_order, label: 'Work Order'             %>
-  <%= f.input :purchase_order, label: 'Purchase Order'     %>
-  <%= f.input :stress_in_date, label: 'Stress in Date'     %>
-  <%= f.input :stress_in_time, label: 'Stress in '         %>
-  <%= f.input :stress_out_date, label: 'Stress out Date'   %>
-  <%= f.input :stress_out_time, label: 'Stress out'        %>
-  <%= f.input :stress_asset, label: 'Asset Number'         %>
+  <table class="table">
+  <td><%= f.input :customer%></td>
+    <td><%= f.input :work_order, label: 'Work Order'%></td>
+    <td><%= f.input :purchase_order, label: 'Purchase Order'%></td>
+  </table>
+    <table class="table">
+  <td><%= f.input :stress_in_date, label: 'Stress in Date'     %></td>
+  <td><%= f.input :stress_in_time, label: 'Stress in '         %></td>
+  <td><%= f.input :stress_out_date, label: 'Stress out Date'   %></td>
+<td><%= f.input :stress_out_time, label: 'Stress out'        %></td>
+  <td><%= f.input :stress_asset, label: 'Asset Number'         %></td>
+</table>
+<table class= "table">
 
-  <%= f.input :her_in_date, label: 'HER in Date'           %>
-  <%= f.input :her_in_time, label: 'HER in'                %>
-  <%= f.input :her_out_date, label: 'HER out Date'         %>
-  <%= f.input :her_out_time, label: 'HER out '             %>
-  <%= f.input :her_asset, label: 'Asset Number'            %>
-  <%= f.input :operator, label: 'Operator'                 %>
-
+  <td><%= f.input :her_in_date, label: 'HER in Date'           %></td>
+  <td><%= f.input :her_in_time, label: 'HER in'                %></td>
+  <td><%= f.input :her_out_date, label: 'HER out Date'         %></td>
+  <td><%= f.input :her_out_time, label: 'HER out '             %></td>
+  <td><%= f.input :her_asset, label: 'Asset Number'            %></td>
+  <td><%= f.input :operator, label: 'Operator'                 %></td>
+</table>
   <%= f.submit "Submit", class: 'btn btn-primary' %>
   <% end %>
+</table>
 </div>
