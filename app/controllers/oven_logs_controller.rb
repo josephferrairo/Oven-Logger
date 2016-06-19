@@ -16,6 +16,10 @@ class OvenLogsController < ApplicationController
     end
   end
 
+  def show
+    @oven_log = OvenLog.find(params[:id])
+  end
+
   private
   def oven_log_params
     params.require(:oven_log).permit(:customer, :work_order, :purchase_order, :operator)
