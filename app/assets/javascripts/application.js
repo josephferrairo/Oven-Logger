@@ -13,6 +13,7 @@
 //= require jquery
 //= require wice_grid
 //= require moment
+//= require bootstrap-datepicker
 //= require bootstrap-datetimepicker
 //= require pickers
 //= require bootstrap-sprockets
