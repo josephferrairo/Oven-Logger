@@ -15,12 +15,13 @@ gem 'devise'
 
 group :development, :test do
   gem 'byebug'
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  gem 'rspec-rails', '~> 3.4'
+
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
-
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'spring'
 end
