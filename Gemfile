@@ -16,7 +16,6 @@ gem 'devise'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.4'
-
 end
 
 group :development do
@@ -24,4 +23,5 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'spring'
+  gem 'guard-rspec', require: false
 end
