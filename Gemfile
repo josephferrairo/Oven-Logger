@@ -18,6 +18,7 @@ gem 'font-awesome-sass',  '~> 4.3'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.4'
+  gem 'capybara'
 end
 
 group :development do
