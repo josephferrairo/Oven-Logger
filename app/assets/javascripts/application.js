@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require wice_grid
+//= require moment
+//= require bootstrap-datetimepicker
+//= require pickers
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks

@@ -17,6 +17,8 @@ gem 'font-awesome-sass',  '~> 4.3'
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'simple_form'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 
 group :development, :test do
   gem 'byebug'
