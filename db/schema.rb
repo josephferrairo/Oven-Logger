@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160619032246) do
+ActiveRecord::Schema.define(version: 20160620211040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,20 +20,16 @@ ActiveRecord::Schema.define(version: 20160619032246) do
     t.string   "customer"
     t.string   "work_order"
     t.string   "purchase_order"
-    t.date     "stress_in_date"
-    t.time     "stress_in_time"
-    t.date     "stress_out_date"
-    t.time     "stress_out_time"
     t.string   "stress_asset"
-    t.date     "her_in_date"
-    t.time     "her_in_time"
-    t.date     "her_out_date"
-    t.time     "her_out_time"
     t.string   "operator"
     t.integer  "user_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "her_asset"
+    t.datetime "stress_in"
+    t.datetime "stress_out"
+    t.datetime "her_in"
+    t.datetime "her_out"
   end
 
   add_index "oven_logs", ["user_id"], name: "index_oven_logs_on_user_id", using: :btree

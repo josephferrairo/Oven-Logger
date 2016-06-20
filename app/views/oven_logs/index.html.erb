@@ -15,41 +15,29 @@
       oven_log.purchase_order
     end
 
-    g.column name: 'Stress in(Date)', attribute: 'stress_in_date', filter_type: :bootstrap_datepicker do |oven_log|
-      oven_log.stress_in_date
+    g.column name: 'Stress in', attribute: 'stress_in', filter_type: :bootstrap_datepicker do |oven_log|
+      oven_log.stress_in
     end
 
-    g.column name: 'Stress in', attribute: 'stress_in_time', filter_type: :false do |oven_log|
-      oven_log.stress_in_time
+
+    g.column name: 'Stress out', attribute: 'stress_out', filter_type: :bootstrap_datepicker do |oven_log|
+      oven_log.stress_out
     end
 
-    g.column name: 'Stress out(Date)', attribute: 'stress_out_date', filter_type: :bootstrap_datepicker do |oven_log|
-      oven_log.stress_out_date
-    end
-
-    g.column name: 'Stress out(Time)', attribute: 'stress_out_time', filter_type: :false do |oven_log|
-      oven_log.stress_out_time
-    end
 
     g.column name: 'Asset Number', attribute: 'stress_asset', filter_type: :false do |oven_log|
       oven_log.stress_asset
     end
 
-    g.column name: 'HER in(Date)', attribute: 'her_in_date', filter_type: :bootstrap_datepicker do |oven_log|
-      oven_log.her_in_date
+    g.column name: 'HER in', attribute: 'her_in', filter_type: :bootstrap_datepicker do |oven_log|
+      oven_log.her_in
     end
 
-    g.column name: 'HER in(Time)', attribute: 'her_in_time', filter_type: :false do |oven_log|
-      oven_log.her_in_time
+
+    g.column name: 'HER out', attribute: 'her_out', filter_type: :bootstrap_datepicker do |oven_log|
+      oven_log.her_out
     end
 
-    g.column name: 'HER out(Date)', attribute: 'her_out_date', filter_type: :bootstrap_datepicker do |oven_log|
-      oven_log.her_out_date
-    end
-
-    g.column name: 'HER out(Time)', attribute: 'her_out_time', filter_type: :false do |oven_log|
-      oven_log.her_out_time
-    end
 
     g.column name: 'Asset Number', attribute: 'her_asset', filter_type: :false do |oven_log|
       oven_log.her_asset

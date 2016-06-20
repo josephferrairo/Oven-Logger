@@ -28,6 +28,6 @@ class OvenLogsController < ApplicationController
 
   private
   def oven_log_params
-    params.require(:oven_log).permit(:customer, :work_order, :purchase_order, :stress_in_date, :stress_in_time, :stress_out_date, :stress_out_time, :stress_asset, :her_in_date, :her_in_time, :her_out_time, :her_out_date, :her_asset, :operator)
+    params.require(:oven_log).permit(:customer, :work_order, :purchase_order, :stress_in, :stress_out,  :stress_asset, :her_in, :her_out, :her_asset, :operator)
   end
 end
