@@ -43,5 +43,10 @@
     g.column name: 'Operator' do |oven_log|
       oven_log.operator
     end
+    g.column name: 'Edit?' do |oven_log|
+      link_to('Modify', edit_oven_log_path(oven_log))
+    end
+
+
   end %>
 </div>
