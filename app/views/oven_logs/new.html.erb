@@ -13,12 +13,12 @@
   </table>
 
   <table class="table">
-    <td><%= f.input :stress_in, :include_blank => true, as: :datetime_picker, label: 'Stress in' %></td>
+    <td><%= f.input :stress_in, :include_blank => true, as: :datetime_picker, label: 'Stress in (DD/MM/YY)' %></td>
 
-    <td><%= f.input :stress_out, :include_blank => true, label: 'Stress out', as: :datetime_picker          %></td>
+    <td><%= f.input :stress_out, :include_blank => true, label: 'Stress out        (DD/MM/YY)', as: :datetime_picker          %></td>
     <td><%= f.input :stress_asset, :include_blank => true, label: 'Asset'               %></td>
-    <td><%= f.input :her_in, :include_blank => true, label: 'HER in', as: :datetime_picker %></td>
-    <td><%= f.input :her_out, :include_blank => true, label: 'HER out', as: :datetime_picker %></td>
+    <td><%= f.input :her_in, :include_blank => true, label: 'HER in   (DD/MM/YY)', as: :datetime_picker %></td>
+    <td><%= f.input :her_out, :include_blank => true, label: 'HER out   (DD/MM/YY)', as: :datetime_picker %></td>
     <td><%= f.input :her_asset, label: 'Asset'          %></td>
   </table>
   <table>

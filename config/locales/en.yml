@@ -20,10 +20,3 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  datepicker:
-    dformat: '%d/%m/%y'             # display format of the date (this is the default, can be ommited)
-    pformat: 'MM/DD/YYYY'           # picking format of the date (this is the default, can be ommited)
-  timepicker:
-    dformat: '%R'                   # display format of the time (this is the default, can be ommited)
-    pformat: 'HH:mm'                # picking format of the time (this is the default, can be ommited)
-  dayViewHeaderFormat: 'MMMM YYYY'  # picking format of the time (this is the default, can be ommited)
