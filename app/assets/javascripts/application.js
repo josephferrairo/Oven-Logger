@@ -11,12 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require wice_grid
 //= require moment
 //= require bootstrap-datepicker
 //= require bootstrap-datetimepicker
 //= require pickers
-//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
