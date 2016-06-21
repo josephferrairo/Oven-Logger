@@ -43,11 +43,12 @@ class OvenLogsController < ApplicationController
   def destroy
     @oven_log = OvenLog.find(params[:id])
     @oven_log.destroy
-    redirect_to root_path
+    redirect_to oven_logs_path
   end
+end
 
-  private
-  def oven_log_params
-    params.require(:oven_log).permit(:customer, :work_order, :purchase_order, :stress_in, :stress_out,  :stress_asset, :her_in, :her_out, :her_asset, :operator)
-  end
+private
+def oven_log_params
+  params.require(:oven_log).permit(:customer, :work_order, :purchase_order, :stress_in, :stress_out,  :stress_asset, :her_in, :her_out, :her_asset, :operator)
+
 end

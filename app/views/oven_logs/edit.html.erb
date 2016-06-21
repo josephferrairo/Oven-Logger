@@ -23,10 +23,10 @@
   </table>
   <table>
 
-  <table>
-    <%= f.submit "Submit", class: 'btn btn-primary'  %>
-    </table
+    <table>
+      <%= f.submit "Submit", class: 'btn btn-primary'  %>
+      <%= link_to 'Delete Record', oven_log_path(@oven_log), method: :delete, :data => { :confirm => 'Are you sure you want to delete this record?' }, :class => 'btn btn-danger' %>
+    </table>
 
     <% end %>
-  </table>
-</div>
+  </div>
