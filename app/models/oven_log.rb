@@ -9,7 +9,7 @@ class OvenLog < ActiveRecord::Base
   validates_presence_of :stress_asset, :if => :stress_in
   validates_presence_of :her_asset, :if => :her_in
 
-  validates_datetime :her_out, :after => :her_in, :allow_blank => true
-  validates_datetime :stress_out, :after => :stress_in, :allow_blank => true
+  #validates_datetime :her_out, :after => :her_in, :allow_blank => true
+  #validates_datetime :stress_out, :after => :stress_in, :allow_blank => true
 
 end
