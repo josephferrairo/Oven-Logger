@@ -55,12 +55,13 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
   Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    # Choose a test framework:
-    with.test_framework :rspec
-    with.library :active_record
-    with.library :active_model
-    with.library :action_controller
-    with.library :rails
+    config.integrate do |with|
+      # Choose a test framework:
+      with.test_framework :rspec
+      with.library :active_record
+      with.library :active_model
+      with.library :action_controller
+      with.library :rails
+    end
   end
 end
