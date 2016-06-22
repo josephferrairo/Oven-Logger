@@ -19,7 +19,7 @@ RSpec.describe OvenLogsController, type: :controller do
   end
 
   describe "get #new" do
-
+    login_admin
     it "returns a successful http status code" do
       get :new
       expect(response).to have_http_status(:success)
