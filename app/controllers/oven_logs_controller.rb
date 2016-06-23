@@ -1,5 +1,6 @@
 class OvenLogsController < ApplicationController
   before_action :authenticate_user!
+
   def index
     @oven_log = OvenLog.all
     @oven_logs_grid = initialize_grid(OvenLog,

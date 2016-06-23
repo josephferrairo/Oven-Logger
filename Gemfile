@@ -25,7 +25,8 @@ gem 'timeliness'
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.4'
+  gem 'rspec-rails'
+  gem 'rspec'
   gem 'capybara'
   gem 'faker'
   gem 'fabrication'
