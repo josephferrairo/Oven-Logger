@@ -3,7 +3,7 @@
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background:url('greywall.png');
+  background:url('always_grey.png');
   color: #000000;
   font-color: black !important;
 }
@@ -11,8 +11,17 @@
   color: #000000 !important;
 }
 
+.new-log {
+  background: url('greywall.png');
+  color: white !important;
+}
+
 a:-webkit-any-link {
-  color: #9a2828 !important;
+  color: #white !important;
+}
+
+.twobuttons{
+  display: inline-block;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -28,31 +37,24 @@ a.navbar-inverse a.navbar-brand {
 }
 
 .booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background-color: #4f4d4d;
+  -moz-box-shadow: 1px 1px 2px 0 #6a6a6a;
+  -webkit-box-shadow: 1px 1px 2px 0 #6a6a6a;
+  box-shadow: 1px 1px 2px 0 #6a6a6a;
+  background-image: url("low_contrast_linen.png");
   border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-color: #474747 #6a6a6a #6a6a6a #474747;
   margin-top:10px;
   margin-bottom:15px;
   padding:20px;
 }
 .left {
-  float: left;
-  width: 125px;
-  text-align: right;
-  margin: 2px 10px;
-
+  text-align: left;
 }
 
 .right {
-  float: left;
-  text-align: left;
-  margin: 2px 10px;
-
+  text-align: right;
 }
 
 body {
-  background-image: url("mooning.png");
+  background-image: url("greywall.png");
 }
