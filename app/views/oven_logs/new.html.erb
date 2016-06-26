@@ -1,18 +1,18 @@
 <br  />
 
-<div class="booyah-box col-xs-12  text-center">
+<div class="booyah-box col-xs-12">
   <h1>Add a New Oven Log Entry</h1>
   <br  />
   <%= simple_form_for @oven_log, url: oven_logs_path do |f| %>
 
-  <table class="table new-log">
+  <table class="table new-log text-center">
     <td><%= f.input :customer%></td>
     <td><%= f.input :work_order, label: 'Work Order'%></td>
     <td><%= f.input :purchase_order, label: 'Purchase Order'%></td>
     <td><%= f.input :operator, label: 'Operator'                                               %></td>
   </table>
 
-  <table class="table new-log">
+  <table class="table new-log text-center">
     <td><%= f.input :stress_in, :include_blank => true, as: :datetime_picker, label: 'Stress in (DD/MM/YY)' %></td>
 
     <td><%= f.input :stress_out, :include_blank => true, label: 'Stress out        (DD/MM/YY)', as: :datetime_picker          %></td>
