@@ -1,7 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  font-family: 'Roboto';
+}
+
 .navbar {
   border-radius:0;
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 200;
+  font-weight: 300;
   box-shadow: 0px 1px 3px #2a2a2a;
   background:url('always_grey.png');
   color: #000000;
