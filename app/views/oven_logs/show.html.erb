@@ -1,14 +1,23 @@
-<div class="booyah-box a">
+<div class="booyah-box">
+  <table class="table a">
+    <tr class="active">
+      <td>Customer: <%= @oven_log.customer %></td>
+      <td>Work Order: <%= @oven_log.work_order %></td>
+      <td>Purchase Order: <%= @oven_log.purchase_order %></td>
+    </tr>
 
-  <ul>Customer: <%= @oven_log.customer %></ul>
-  <ul>Work Order: <%= @oven_log.work_order %></ul>
-  <ul>Purchase Order: <%= @oven_log.purchase_order %></ul>
-  <ul>Stress in: <%= @oven_log.stress_in %></ul>
-  <ul>Stress out: <%= @oven_log.stress_out %></ul>
-  <ul>Asset: <%= @oven_log.stress_asset %></ul>
-  <ul>HER in: <%= @oven_log.her_in %></ul>
-  <ul>HER out: <%= @oven_log.her_out %></ul>
-  <ul>Asset: <%= @oven_log.her_asset %></ul>
-  <ul>Operator: <%= @oven_log.operator %></ul>
-  
+  <tr class="default">
+  <td>Stress in: <%= @oven_log.stress_in %></td>
+  <td>Stress out: <%= @oven_log.stress_out %></td>
+  <td>Asset: <%= @oven_log.stress_asset %></td>
+</tr>
+<tr class="active">
+  <td>HER in: <%= @oven_log.her_in %></td>
+  <td>HER out: <%= @oven_log.her_out %></td>
+  <td>Asset: <%= @oven_log.her_asset %></td>
+</tr>
+<tr class="default">
+  <td>Operator: <%= @oven_log.operator %></td>
+</tr>
+</table>
 </div>
