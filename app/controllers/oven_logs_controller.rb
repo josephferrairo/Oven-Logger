@@ -25,8 +25,17 @@ class OvenLogsController < ApplicationController
 
   def show
     @oven_log = OvenLog.find(params[:id])
-  end
 
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = LogPdf.new(@oven_log)
+        send_data pdf.render, filename: "#{@oven_log.customer} #{@oven_log.work_order}.pdf",
+                                type: "application/pdf",
+                                disposition: "inline"
+      end
+    end
+  end
   def edit
     @oven_log = OvenLog.find(params[:id])
   end

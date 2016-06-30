@@ -21,6 +21,8 @@ gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: '
 gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'bootswatch-rails'
+gem 'prawn'
+gem 'prawn-table'
 
 group :development, :test do
   gem 'byebug'

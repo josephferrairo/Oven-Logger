@@ -20,4 +20,6 @@
       <td>Operator: <%= @oven_log.operator %></td>
     </tr>
   </table>
+
+<p><%= link_to "Print Log (PDF)", oven_log_path(@oven_log, format: "pdf")%></p>
 </div>
